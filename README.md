@@ -77,7 +77,7 @@ responds always within 10 millis:
 
 * /metrics
 
-event loop lag mean is 10 milliseconds. :thumbsup:
+event loop lag mean is 10 milliseconds. Max. event loop lag was 28 millis. :thumbsup:
 
 ```
 # HELP nodejs_eventloop_lag_min_seconds The minimum recorded event loop delay.
@@ -112,7 +112,7 @@ outage as soon as the /file endpoint is called:
 
 * /metrics
 
-For 8 seconds no new requests could have been processed (incl. health check and metrics). :thumbsdown:
+The event loop lag mean is 56 millis, however, for 8 seconds no new requests could have been processed (incl. health check and metrics), see max value. :thumbsdown:
 
 ```
 # HELP nodejs_eventloop_lag_min_seconds The minimum recorded event loop delay.
