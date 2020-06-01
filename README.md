@@ -112,7 +112,7 @@ outage as soon as the /file endpoint is called:
 
 * /metrics
 
-For 8 seconds no new requests could have been processed (incl. health check and metrics). :thumbdown:
+For 8 seconds no new requests could have been processed (incl. health check and metrics). :thumbsdown:
 
 ```
 # HELP nodejs_eventloop_lag_min_seconds The minimum recorded event loop delay.
